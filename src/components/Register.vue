@@ -74,33 +74,7 @@ setup(){
                   error_password.value = 'Please fill the password!';
                   password.value = "";
                   confirm_password.value = "";
-                }   
-            //  if(password.value === confirm_password.value){
-            //     let response =  await fetch("http://localhost:8087/api/user/register",{
-            //     method : "POST",
-            //     headers : {
-            //         "Content-type" : "application/json"
-            //     },
-            //     body:JSON.stringify({
-            //         name : name.value,
-            //         gmail : gmail.value,
-            //         password : password.value,
-            //         confirm_password : confirm_password.value,
-            //         phone : phone.value
-            //     })
-            // })
-            // if(response.status == 200 ){
-            //     alert('register success');        
-            // }else{
-            //   throw new Error('Not valid');
-            // }
-            // router.push("/");
-            //     }else{
-            //       console.log('pass is not same');
-            //       error_password.value = 'Please fill the password!';
-            //       password.value = "";
-            //       confirm_password.value = "";
-            //     }    
+                }      
            }catch(err){
             error.value= err.message;
            }
@@ -110,10 +84,10 @@ setup(){
 }
 
 }
+
 </script>
 
 <style>
-
 
 
 </style>
